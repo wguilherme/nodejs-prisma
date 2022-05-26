@@ -10,6 +10,11 @@
     "docker:postgres-stop": "cd ./postgres-docker && docker-compose stop"
   },
   "dependencies": {
+    "@prisma/client": "^3.14.0",
     "prisma": "^3.14.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.7.2"
   }
 }
