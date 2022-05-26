@@ -8,7 +8,7 @@
   "scripts": {
     "docker:postgres-up": "cd ./postgres-docker && docker-compose up -d",
     "docker:postgres-stop": "cd ./postgres-docker && docker-compose stop",
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn ./src/findOne.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn ./src/update.ts"
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",

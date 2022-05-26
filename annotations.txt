@@ -9,3 +9,5 @@ http://localhost:5050/login
 
 get IPAddress from  postgres for use in pgAdmin:
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <pg-container-id>
+
+yarn ts-node-dev --transpile-only  src/update.ts   
