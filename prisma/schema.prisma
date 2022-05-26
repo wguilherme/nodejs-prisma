@@ -37,9 +37,11 @@ model Teachers {
 }
 
 model Books {
-  id   String @id @default(uuid())
-  name String @unique
+  id     String  @id @default(uuid())
+  name   String  @unique
+  author Authors @relation(fields: [authorId], references: [id])
 
+  authorId String
   @@map("books")
 }
 
@@ -48,5 +50,6 @@ model Authors {
   name String @unique
 
 
+  books Books[]
   @@map("authors")
 }
