@@ -35,3 +35,18 @@ model Teachers {
   Courses Courses?
   @@map("teachers")
 }
+
+model Books {
+  id   String @id @default(uuid())
+  name String @unique
+
+  @@map("books")
+}
+
+model Authors {
+  id   String @id @default(uuid())
+  name String @unique
+
+
+  @@map("authors")
+}
