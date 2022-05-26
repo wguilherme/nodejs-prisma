@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wguilherme/nodejs-prisma.git",
+  "author": "Withney Guilherme <wguilhermecriativo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docker:postgres-up": "cd ./postgres-docker && docker-compose up -d",
+    "docker:postgres-stop": "cd ./postgres-docker && docker-compose stop"
+  },
+  "dependencies": {
+    "prisma": "^3.14.0"
+  }
+}
